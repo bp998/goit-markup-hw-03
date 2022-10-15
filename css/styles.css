@@ -9,15 +9,49 @@
 }
 
 body {
+  margin: 0;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   color: rgba(33, 33, 33, 1);
   background-color: var(--white-color);
 }
 
+/* ============================ */
+/* ========== UNIVERSAL, HEADER AND FOOTER STYLING */
+/* ============================ */
+
+/* ===UNIVERSAL */
+
+.blue-text {
+  color: var(--brand-color);
+}
+
+.decoration-none {
+  text-decoration: none;
+}
+
 .background-block {
   background-color: var(--second-background);
 }
+
+.list-styling {
+  list-style: none;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu {
+  display: flex;
+  flex-grow: 1;
+  max-width: 30%;
+  justify-content: space-between;
+}
+
+/* ===HEADER */
 
 .webstudio-top {
   font-family: "Raleway", sans-serif;
@@ -28,17 +62,18 @@ body {
   letter-spacing: 0.03em;
 }
 
-.blue-text {
-  color: var(--brand-color);
-}
-
-.list-styling {
-  list-style-type: none;
-}
-
 .navigation-button {
   color: inherit;
   text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.header-address {
+  text-decoration: none;
+  color: var(--link-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -57,72 +92,7 @@ body {
   outline: none;
 }
 
-.header-address {
-  text-decoration: none;
-  color: var(--link-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
-
-.button {
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  background-color: var(--button-color);
-  border: none;
-  border-radius: 4px;
-}
-
-.button:hover,
-.button:focus {
-  color: var(--white-color);
-  background-color: var(--brand-color);
-  cursor: pointer;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border: none;
-  outline: none;
-}
-
-.main-page-button {
-  background-color: var(--brand-color);
-  color: var(--white-color);
-  border: none;
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-}
-
-.main-page-button:hover,
-.main-page-button:focus {
-  cursor: pointer;
-}
-
-.main-image {
-  height: 294px;
-}
-
-.image-header {
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
-
-.image-subtitle {
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.03em;
-  color: var(--link-color);
-}
+/* ===FOOTER */
 
 .webstudio-bottom {
   font-family: "Raleway", sans-serif;
@@ -147,16 +117,9 @@ body {
   color: var(--second-link-color);
 }
 
-.decoration-none {
-  text-decoration: none;
-}
-
-.box-styling {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-  width: 270px;
-}
+/* ============================ */
+/* ========== INDEX.HTML PAGE */
+/* ============================ */
 
 .central-text {
   font-weight: 900;
@@ -166,6 +129,26 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
+}
+
+.main-page-button {
+  background-color: var(--brand-color);
+  color: var(--white-color);
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.main-page-button:hover,
+.main-page-button:focus {
+  cursor: pointer;
 }
 
 .lorem-topic {
@@ -204,4 +187,49 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--link-color);
+}
+
+/* ============================ */
+/* ========== PORTFOLIO.HTML PAGE */
+/* ============================ */
+
+.button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  background-color: var(--button-color);
+  border: none;
+  border-radius: 4px;
+}
+
+.button:hover,
+.button:focus {
+  color: var(--white-color);
+  background-color: var(--brand-color);
+  cursor: pointer;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border: none;
+  outline: none;
+}
+
+.image-header {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.image-subtitle {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--link-color);
+}
+
+.box-styling {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  width: 270px;
 }
