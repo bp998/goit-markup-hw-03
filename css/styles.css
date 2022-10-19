@@ -52,19 +52,21 @@ body {
 }
 
 .section {
-  padding: 94px 0;
+  padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 .lorem-section {
   display: flex;
   gap: 30px;
-  padding: 0;
+  padding: 0px;
 }
 
 .main-page-middle {
   display: flex;
   gap: 2.5%;
   padding: 0;
+  padding-bottom: 94px;
 }
 
 .main-page-team {
