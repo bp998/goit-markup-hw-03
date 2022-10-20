@@ -255,6 +255,7 @@ body {
   display: flex;
   gap: 30px;
   padding: 0px;
+  margin-top: 94px;
 }
 
 .lorem-topic {
@@ -275,7 +276,6 @@ body {
   display: flex;
   gap: 2.5%;
   padding: 0;
-  padding-bottom: 94px;
 }
 
 .main-page-header {
